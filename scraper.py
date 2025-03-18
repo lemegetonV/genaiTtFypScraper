@@ -105,7 +105,7 @@ class TikTokScraper:
                 if 500 <= response2.status_code < 600:  # Check for 5XX errors
                     logging.error(f"Download failed for video {video_id} due to server error: {http_err}")
                     # Update the database to mark the video as not downloaded
-                    self.cursor.execute("UPDATE processed_videos SET is_downloaded = 'failed' WHERE video_id = ?", (video_id,))
+                    self.cursor.execute("UPDATE processed_videos SET is_downloaded = 'no' WHERE video_id = ?", (video_id,))
                     self.conn.commit()
                 else:
                     raise
