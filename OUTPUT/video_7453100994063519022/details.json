@@ -1,0 +1,749 @@
+{
+    "AIGCDescription": "",
+    "CategoryType": 102,
+    "anchors": [
+        {
+            "description": "CapCut · Video Editor",
+            "extraInfo": {
+                "subtype": ""
+            },
+            "icon": {
+                "urlList": [
+                    "https://p16-sg.tiktokcdn.com/obj/tiktok-obj/capcut_logo_64px_bk.png?shp=81f88b70&shcp=-"
+                ]
+            },
+            "id": "0",
+            "keyword": "CapCut · Editing made easy",
+            "logExtra": "{\"anchor_id\":0,\"anchor_name\":\"CapCut · Editing made easy\",\"anchor_title_detail\":\"None\",\"anchor_title_id\":21502485763,\"anchor_type\":\"TT_CAPCUT\",\"capability_key\":\"default\",\"if_race_trigger\":0,\"is_two_line\":0,\"landing_page_style_id\":21502486275,\"maker_source\":\"\",\"publish_key\":\"default\",\"template_id\":\"none\",\"tutorial_id\":\"none\",\"viamaker_anchor_capability_key_weight\":1,\"viamaker_anchor_style_idx\":-1,\"viamaker_anchor_style_source\":3,\"video_source\":1,\"video_type_id\":1}",
+            "schema": "https://www.capcut.com/editor?scenario=tiktok&utm_source=tiktok_anchor_tool&utm_medium=tiktok_anchor&utm_campaign=70361230",
+            "thumbnail": {
+                "height": 64,
+                "urlList": [
+                    "https://p16-sg.tiktokcdn.com/obj/tiktok-obj/64x_Capcut3x.png?shp=81f88b70&shcp=-"
+                ],
+                "width": 64
+            },
+            "type": 54
+        }
+    ],
+    "author": {
+        "avatarLarger": "https://p16-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/2c7ea0e2cb35dbf70a341a2c2776a2a0~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=a4fb13c7&x-expires=1742428800&x-signature=RpUgHZRQniLr2QAQm2T18O67WIk%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+        "avatarMedium": "https://p19-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/2c7ea0e2cb35dbf70a341a2c2776a2a0~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=231ba9a6&x-expires=1742428800&x-signature=T8cdXxM6gC%2B6tKxMGeUMH8upDhI%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+        "avatarThumb": "https://p19-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/2c7ea0e2cb35dbf70a341a2c2776a2a0~tplv-tiktokx-cropcenter:100:100.jpeg?dr=9640&refresh_token=14ad1485&x-expires=1742428800&x-signature=FbPPboT679OqerqIIyuO6zuf9YI%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+        "commentSetting": 0,
+        "downloadSetting": 3,
+        "duetSetting": 0,
+        "ftc": false,
+        "id": "6834806151755777030",
+        "isADVirtual": false,
+        "isEmbedBanned": false,
+        "nickname": "Morovanofficial",
+        "openFavorite": false,
+        "privateAccount": false,
+        "relation": 0,
+        "secUid": "MS4wLjABAAAAI00nOhn4hUd-U8caHEUa9yO6_8tiQOtvm1nyk-hbTIIOgxY2yxTvvLElqVMld0cU",
+        "secret": false,
+        "signature": "Morovan shop has many curated items\n⬇️ Come take a look! ⬇️",
+        "stitchSetting": 0,
+        "uniqueId": "morovanofficial",
+        "verified": false
+    },
+    "authorStats": {
+        "diggCount": 10100,
+        "followerCount": 1300000,
+        "followingCount": 279,
+        "friendCount": 0,
+        "heart": 12800000,
+        "heartCount": 12800000,
+        "videoCount": 1774
+    },
+    "backendSourceEventTracking": "fyp_32",
+    "challenges": [
+        {
+            "coverLarger": "",
+            "coverMedium": "",
+            "coverThumb": "",
+            "desc": "",
+            "id": "1646195605719042",
+            "profileLarger": "",
+            "profileMedium": "",
+            "profileThumb": "",
+            "title": "nailproducts"
+        },
+        {
+            "coverLarger": "",
+            "coverMedium": "",
+            "coverThumb": "",
+            "desc": "What are you #Unboxing?",
+            "id": "460811",
+            "profileLarger": "https://p16-amd-va.tiktokcdn.com/obj/musically-maliva-obj/dd812dc47e09e56b7d27cf3b22667eff.jpeg?shp=81f88b70&shcp=-",
+            "profileMedium": "https://p16-amd-va.tiktokcdn.com/obj/musically-maliva-obj/dd812dc47e09e56b7d27cf3b22667eff.jpeg?shp=81f88b70&shcp=-",
+            "profileThumb": "https://p16-amd-va.tiktokcdn.com/obj/musically-maliva-obj/dd812dc47e09e56b7d27cf3b22667eff.jpeg?shp=81f88b70&shcp=-",
+            "title": "unboxing"
+        },
+        {
+            "coverLarger": "",
+            "coverMedium": "",
+            "coverThumb": "",
+            "desc": "",
+            "id": "3935319",
+            "profileLarger": "",
+            "profileMedium": "",
+            "profileThumb": "",
+            "title": "gradientnails"
+        },
+        {
+            "coverLarger": "",
+            "coverMedium": "",
+            "coverThumb": "",
+            "desc": "",
+            "id": "89509",
+            "profileLarger": "",
+            "profileMedium": "",
+            "profileThumb": "",
+            "title": "bluenails"
+        },
+        {
+            "coverLarger": "",
+            "coverMedium": "",
+            "coverThumb": "",
+            "desc": "",
+            "id": "263522",
+            "profileLarger": "",
+            "profileMedium": "",
+            "profileThumb": "",
+            "title": "whitenails"
+        },
+        {
+            "coverLarger": "",
+            "coverMedium": "",
+            "coverThumb": "",
+            "desc": "",
+            "id": "1607140720676865",
+            "profileLarger": "",
+            "profileMedium": "",
+            "profileThumb": "",
+            "title": "polygelnails"
+        },
+        {
+            "coverLarger": "",
+            "coverMedium": "",
+            "coverThumb": "",
+            "desc": "",
+            "id": "184199",
+            "profileLarger": "",
+            "profileMedium": "",
+            "profileThumb": "",
+            "title": "nailsalon"
+        },
+        {
+            "coverLarger": "https://p16-amd-va.tiktokcdn.com/obj/musically-maliva-obj/9f6335b0ebb19a7be09903b816663b5e.jpeg?shp=81f88b70&shcp=-",
+            "coverMedium": "https://p16-amd-va.tiktokcdn.com/obj/musically-maliva-obj/9f6335b0ebb19a7be09903b816663b5e.jpeg?shp=81f88b70&shcp=-",
+            "coverThumb": "https://p16-amd-va.tiktokcdn.com/obj/musically-maliva-obj/9f6335b0ebb19a7be09903b816663b5e.jpeg?shp=81f88b70&shcp=-",
+            "desc": "Show us your #NailArt",
+            "id": "7842",
+            "profileLarger": "https://p16-amd-va.tiktokcdn.com/obj/musically-maliva-obj/d0430052bbe1f41f834224d31c7b1edf.jpeg?shp=81f88b70&shcp=-",
+            "profileMedium": "https://p16-amd-va.tiktokcdn.com/obj/musically-maliva-obj/d0430052bbe1f41f834224d31c7b1edf.jpeg?shp=81f88b70&shcp=-",
+            "profileThumb": "https://p16-amd-va.tiktokcdn.com/obj/musically-maliva-obj/d0430052bbe1f41f834224d31c7b1edf.jpeg?shp=81f88b70&shcp=-",
+            "title": "nailart"
+        },
+        {
+            "coverLarger": "",
+            "coverMedium": "",
+            "coverThumb": "",
+            "desc": "",
+            "id": "1600968521537537",
+            "profileLarger": "",
+            "profileMedium": "",
+            "profileThumb": "",
+            "title": "polygel"
+        },
+        {
+            "coverLarger": "",
+            "coverMedium": "",
+            "coverThumb": "",
+            "desc": "",
+            "id": "5454775",
+            "profileLarger": "",
+            "profileMedium": "",
+            "profileThumb": "",
+            "title": "nailsartvideos"
+        },
+        {
+            "coverLarger": "",
+            "coverMedium": "",
+            "coverThumb": "",
+            "desc": "",
+            "id": "216047",
+            "profileLarger": "",
+            "profileMedium": "",
+            "profileThumb": "",
+            "title": "nailtutorial"
+        },
+        {
+            "coverLarger": "",
+            "coverMedium": "",
+            "coverThumb": "",
+            "desc": "",
+            "id": "19803228",
+            "profileLarger": "",
+            "profileMedium": "",
+            "profileThumb": "",
+            "title": "nailmaster"
+        },
+        {
+            "coverLarger": "",
+            "coverMedium": "",
+            "coverThumb": "",
+            "desc": "",
+            "id": "112081",
+            "profileLarger": "",
+            "profileMedium": "",
+            "profileThumb": "",
+            "title": "nailpolish"
+        },
+        {
+            "coverLarger": "",
+            "coverMedium": "",
+            "coverThumb": "",
+            "desc": "",
+            "id": "7050131",
+            "profileLarger": "",
+            "profileMedium": "",
+            "profileThumb": "",
+            "title": "diynails"
+        },
+        {
+            "coverLarger": "",
+            "coverMedium": "",
+            "coverThumb": "",
+            "desc": "Fresh nails for the festive season 💅🏽",
+            "id": "2862048",
+            "profileLarger": "",
+            "profileMedium": "",
+            "profileThumb": "",
+            "title": "christmasnails"
+        },
+        {
+            "coverLarger": "",
+            "coverMedium": "",
+            "coverThumb": "",
+            "desc": "",
+            "id": "1612198878995462",
+            "profileLarger": "",
+            "profileMedium": "",
+            "profileThumb": "",
+            "title": "nailsoftiktok"
+        }
+    ],
+    "collected": false,
+    "contents": [
+        {
+            "desc": "🌟 Want to know how to achieve professional nail results at home? Unbox this kit with me!"
+        },
+        {
+            "desc": ""
+        },
+        {
+            "desc": " #nailproducts #unboxing ",
+            "textExtra": [
+                {
+                    "awemeId": "",
+                    "end": 14,
+                    "hashtagName": "nailproducts",
+                    "isCommerce": false,
+                    "start": 1,
+                    "subType": 0,
+                    "type": 1
+                },
+                {
+                    "awemeId": "",
+                    "end": 24,
+                    "hashtagName": "unboxing",
+                    "isCommerce": false,
+                    "start": 15,
+                    "subType": 0,
+                    "type": 1
+                }
+            ]
+        },
+        {
+            "desc": "#gradientnails #bluenails #whitenails #polygelnails #nailsalon #nailart#polygel  #nailsartvideos #nailtutorial #nailmaster #nailpolish #diynails #christmasnails #nailsoftiktok ",
+            "textExtra": [
+                {
+                    "awemeId": "",
+                    "end": 14,
+                    "hashtagName": "gradientnails",
+                    "isCommerce": false,
+                    "start": 0,
+                    "subType": 0,
+                    "type": 1
+                },
+                {
+                    "awemeId": "",
+                    "end": 25,
+                    "hashtagName": "bluenails",
+                    "isCommerce": false,
+                    "start": 15,
+                    "subType": 0,
+                    "type": 1
+                },
+                {
+                    "awemeId": "",
+                    "end": 37,
+                    "hashtagName": "whitenails",
+                    "isCommerce": false,
+                    "start": 26,
+                    "subType": 0,
+                    "type": 1
+                },
+                {
+                    "awemeId": "",
+                    "end": 51,
+                    "hashtagName": "polygelnails",
+                    "isCommerce": false,
+                    "start": 38,
+                    "subType": 0,
+                    "type": 1
+                },
+                {
+                    "awemeId": "",
+                    "end": 62,
+                    "hashtagName": "nailsalon",
+                    "isCommerce": false,
+                    "start": 52,
+                    "subType": 0,
+                    "type": 1
+                },
+                {
+                    "awemeId": "",
+                    "end": 71,
+                    "hashtagName": "nailart",
+                    "isCommerce": false,
+                    "start": 63,
+                    "subType": 0,
+                    "type": 1
+                },
+                {
+                    "awemeId": "",
+                    "end": 79,
+                    "hashtagName": "polygel",
+                    "isCommerce": false,
+                    "start": 71,
+                    "subType": 0,
+                    "type": 1
+                },
+                {
+                    "awemeId": "",
+                    "end": 96,
+                    "hashtagName": "nailsartvideos",
+                    "isCommerce": false,
+                    "start": 81,
+                    "subType": 0,
+                    "type": 1
+                },
+                {
+                    "awemeId": "",
+                    "end": 110,
+                    "hashtagName": "nailtutorial",
+                    "isCommerce": false,
+                    "start": 97,
+                    "subType": 0,
+                    "type": 1
+                },
+                {
+                    "awemeId": "",
+                    "end": 122,
+                    "hashtagName": "nailmaster",
+                    "isCommerce": false,
+                    "start": 111,
+                    "subType": 0,
+                    "type": 1
+                },
+                {
+                    "awemeId": "",
+                    "end": 134,
+                    "hashtagName": "nailpolish",
+                    "isCommerce": false,
+                    "start": 123,
+                    "subType": 0,
+                    "type": 1
+                },
+                {
+                    "awemeId": "",
+                    "end": 144,
+                    "hashtagName": "diynails",
+                    "isCommerce": false,
+                    "start": 135,
+                    "subType": 0,
+                    "type": 1
+                },
+                {
+                    "awemeId": "",
+                    "end": 160,
+                    "hashtagName": "christmasnails",
+                    "isCommerce": false,
+                    "start": 145,
+                    "subType": 0,
+                    "type": 1
+                },
+                {
+                    "awemeId": "",
+                    "end": 175,
+                    "hashtagName": "nailsoftiktok",
+                    "isCommerce": false,
+                    "start": 161,
+                    "subType": 0,
+                    "type": 1
+                }
+            ]
+        }
+    ],
+    "createTime": 1735310307,
+    "desc": "🌟 Want to know how to achieve professional nail results at home? Unbox this kit with me!  #nailproducts #unboxing  #gradientnails #bluenails #whitenails #polygelnails #nailsalon #nailart#polygel  #nailsartvideos #nailtutorial #nailmaster #nailpolish #diynails #christmasnails #nailsoftiktok ",
+    "digged": false,
+    "diversificationId": 10028,
+    "duetDisplay": 0,
+    "duetEnabled": true,
+    "forFriend": false,
+    "id": "7453100994063519022",
+    "isAd": false,
+    "itemCommentStatus": 0,
+    "item_control": {
+        "can_repost": true
+    },
+    "music": {
+        "album": "Dance You Outta My Head",
+        "authorName": "Cat Janice",
+        "coverLarge": "https://p16-sg.tiktokcdn.com/aweme/720x720/tos-alisg-v-2774/oIEBHeDWFABligVDAZYQCBFtB2IIIQAfgns1OE.jpeg",
+        "coverMedium": "https://p16-sg.tiktokcdn.com/aweme/200x200/tos-alisg-v-2774/oIEBHeDWFABligVDAZYQCBFtB2IIIQAfgns1OE.jpeg",
+        "coverThumb": "https://p16-sg.tiktokcdn.com/aweme/100x100/tos-alisg-v-2774/oIEBHeDWFABligVDAZYQCBFtB2IIIQAfgns1OE.jpeg",
+        "duration": 60,
+        "id": "7320403755933124609",
+        "isCopyrighted": false,
+        "original": false,
+        "playUrl": "https://sf16-ies-music-sg.tiktokcdn.com/obj/tos-alisg-ve-2774/ospaGLdEfLqCFCgINLkvzxArpIQQeDUGYum1eV",
+        "private": false,
+        "title": "Dance You Outta My Head"
+    },
+    "officalItem": false,
+    "originalItem": false,
+    "privateItem": false,
+    "secret": false,
+    "shareEnabled": true,
+    "stats": {
+        "collectCount": 2703,
+        "commentCount": 94,
+        "diggCount": 15100,
+        "playCount": 784300,
+        "shareCount": 1288
+    },
+    "statsV2": {
+        "collectCount": "2703",
+        "commentCount": "94",
+        "diggCount": "15100",
+        "playCount": "784300",
+        "repostCount": "0",
+        "shareCount": "1288"
+    },
+    "stickersOnItem": [
+        {
+            "stickerText": [
+                "@Morovanofficial"
+            ],
+            "stickerType": 4
+        }
+    ],
+    "stitchDisplay": 0,
+    "stitchEnabled": true,
+    "textExtra": [
+        {
+            "awemeId": "",
+            "end": 104,
+            "hashtagName": "nailproducts",
+            "isCommerce": false,
+            "start": 91,
+            "subType": 0,
+            "type": 1
+        },
+        {
+            "awemeId": "",
+            "end": 114,
+            "hashtagName": "unboxing",
+            "isCommerce": false,
+            "start": 105,
+            "subType": 0,
+            "type": 1
+        },
+        {
+            "awemeId": "",
+            "end": 130,
+            "hashtagName": "gradientnails",
+            "isCommerce": false,
+            "start": 116,
+            "subType": 0,
+            "type": 1
+        },
+        {
+            "awemeId": "",
+            "end": 141,
+            "hashtagName": "bluenails",
+            "isCommerce": false,
+            "start": 131,
+            "subType": 0,
+            "type": 1
+        },
+        {
+            "awemeId": "",
+            "end": 153,
+            "hashtagName": "whitenails",
+            "isCommerce": false,
+            "start": 142,
+            "subType": 0,
+            "type": 1
+        },
+        {
+            "awemeId": "",
+            "end": 167,
+            "hashtagName": "polygelnails",
+            "isCommerce": false,
+            "start": 154,
+            "subType": 0,
+            "type": 1
+        },
+        {
+            "awemeId": "",
+            "end": 178,
+            "hashtagName": "nailsalon",
+            "isCommerce": false,
+            "start": 168,
+            "subType": 0,
+            "type": 1
+        },
+        {
+            "awemeId": "",
+            "end": 187,
+            "hashtagName": "nailart",
+            "isCommerce": false,
+            "start": 179,
+            "subType": 0,
+            "type": 1
+        },
+        {
+            "awemeId": "",
+            "end": 195,
+            "hashtagName": "polygel",
+            "isCommerce": false,
+            "start": 187,
+            "subType": 0,
+            "type": 1
+        },
+        {
+            "awemeId": "",
+            "end": 212,
+            "hashtagName": "nailsartvideos",
+            "isCommerce": false,
+            "start": 197,
+            "subType": 0,
+            "type": 1
+        },
+        {
+            "awemeId": "",
+            "end": 226,
+            "hashtagName": "nailtutorial",
+            "isCommerce": false,
+            "start": 213,
+            "subType": 0,
+            "type": 1
+        },
+        {
+            "awemeId": "",
+            "end": 238,
+            "hashtagName": "nailmaster",
+            "isCommerce": false,
+            "start": 227,
+            "subType": 0,
+            "type": 1
+        },
+        {
+            "awemeId": "",
+            "end": 250,
+            "hashtagName": "nailpolish",
+            "isCommerce": false,
+            "start": 239,
+            "subType": 0,
+            "type": 1
+        },
+        {
+            "awemeId": "",
+            "end": 260,
+            "hashtagName": "diynails",
+            "isCommerce": false,
+            "start": 251,
+            "subType": 0,
+            "type": 1
+        },
+        {
+            "awemeId": "",
+            "end": 276,
+            "hashtagName": "christmasnails",
+            "isCommerce": false,
+            "start": 261,
+            "subType": 0,
+            "type": 1
+        },
+        {
+            "awemeId": "",
+            "end": 291,
+            "hashtagName": "nailsoftiktok",
+            "isCommerce": false,
+            "start": 277,
+            "subType": 0,
+            "type": 1
+        }
+    ],
+    "textLanguage": "en",
+    "textTranslatable": true,
+    "video": {
+        "VQScore": "69.02",
+        "bitrate": 752042,
+        "bitrateInfo": [
+            {
+                "Bitrate": 752042,
+                "CodecType": "h264",
+                "GearName": "normal_540_0",
+                "MVMAF": "\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 93.575, \\\"v960\\\": 95.602, \\\"v864\\\": 96.495, \\\"v720\\\": 97.831}, \\\"ori\\\": {\\\"v1080\\\": 82.881, \\\"v960\\\": 85.702, \\\"v864\\\": 87.706, \\\"v720\\\": 90.807}}}\"",
+                "PlayAddr": {
+                    "DataSize": 1385074,
+                    "FileCs": "c:0-13637-77e8",
+                    "FileHash": "d9babec69506bfe5a81f38fdf535a307",
+                    "Height": 1024,
+                    "Uri": "v12044gd0000ctnbmhvog65jm7pp8br0",
+                    "UrlKey": "v12044gd0000ctnbmhvog65jm7pp8br0_h264_540p_752042",
+                    "UrlList": [
+                        "https://v16-webapp-prime.us.tiktok.com/video/tos/useast5/tos-useast5-ve-0068c003-tx/osXdjXsnOQkCIpHOdC3LLDaIIcGgxrAoPAee9e/?a=1988&bti=ODszNWYuMDE6&ch=0&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C&cv=1&br=1468&bt=734&cs=0&ds=6&ft=4KJMyMzm8Zmo02IFTb4jV6ebQpWrKsd.&mime_type=video_mp4&qs=0&rc=N2VoO2U0PDlmNTRlM2VpZkBpM2VzOm05cmtldzMzZzczNEBeXjM1NV9jNWExMDMvMi0tYSNvNW1qMmRzamtgLS1kMS9zcw%3D%3D&btag=e000b8000&expire=1742431200&l=2025031800394580C7F8D52022350025AD&ply_type=2&policy=2&signature=2277ffbe488b8d38c88ef9ab6f853d01&tk=tt_chain_token",
+                        "https://v19-webapp-prime.us.tiktok.com/video/tos/useast5/tos-useast5-ve-0068c003-tx/osXdjXsnOQkCIpHOdC3LLDaIIcGgxrAoPAee9e/?a=1988&bti=ODszNWYuMDE6&ch=0&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C&cv=1&br=1468&bt=734&cs=0&ds=6&ft=4KJMyMzm8Zmo02IFTb4jV6ebQpWrKsd.&mime_type=video_mp4&qs=0&rc=N2VoO2U0PDlmNTRlM2VpZkBpM2VzOm05cmtldzMzZzczNEBeXjM1NV9jNWExMDMvMi0tYSNvNW1qMmRzamtgLS1kMS9zcw%3D%3D&btag=e000b8000&expire=1742431200&l=2025031800394580C7F8D52022350025AD&ply_type=2&policy=2&signature=2277ffbe488b8d38c88ef9ab6f853d01&tk=tt_chain_token",
+                        "https://www.tiktok.com/aweme/v1/play/?faid=1988&file_id=0c0f5b206b3142dc86f9b18b886eaba4&is_play_url=1&item_id=7453100994063519022&line=0&ply_type=2&signaturev3=dmlkZW9faWQ7ZmlsZV9pZDtpdGVtX2lkLmIwNDkyNDZkY2VhNzg3YzVmMzk3NzVlZWQwOGMwZjY4&tk=tt_chain_token&video_id=v12044gd0000ctnbmhvog65jm7pp8br0"
+                    ],
+                    "Width": 576
+                },
+                "QualityType": 20
+            },
+            {
+                "Bitrate": 531914,
+                "CodecType": "h265_hvc1",
+                "GearName": "adapt_lowest_1080_1",
+                "MVMAF": "\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": -1, \\\"v960\\\": -1, \\\"v864\\\": -1, \\\"v720\\\": -1}, \\\"ori\\\": {\\\"v1080\\\": 94.421, \\\"v960\\\": 94.799, \\\"v864\\\": 95.693, \\\"v720\\\": 96.554}}}\"",
+                "PlayAddr": {
+                    "DataSize": 979654,
+                    "FileCs": "c:0-13918-db04",
+                    "FileHash": "f1c43481a3a550a0bd5c8cbd9ff3e95a",
+                    "Height": 1920,
+                    "Uri": "v12044gd0000ctnbmhvog65jm7pp8br0",
+                    "UrlKey": "v12044gd0000ctnbmhvog65jm7pp8br0_bytevc1_1080p_531914",
+                    "UrlList": [
+                        "https://v16-webapp-prime.us.tiktok.com/video/tos/useast5/tos-useast5-ve-0068c004-tx/owAsDEGnSEHO8RzEt2ufBFvbZDThYrInL0UOfg/?a=1988&bti=ODszNWYuMDE6&ch=0&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C&cv=1&br=1038&bt=519&cs=2&ds=4&ft=4KJMyMzm8Zmo02IFTb4jV6ebQpWrKsd.&mime_type=video_mp4&qs=15&rc=Njs3MzU0NzM4MzNoNmg2OEBpM2VzOm05cmtldzMzZzczNEBfYmBfMDMyXmAxMS4tLTJiYSNvNW1qMmRzamtgLS1kMS9zcw%3D%3D&btag=e000b8000&expire=1742431200&l=2025031800394580C7F8D52022350025AD&ply_type=2&policy=2&signature=e957f07d8896382ea5d641908e2a61a7&tk=tt_chain_token",
+                        "https://v19-webapp-prime.us.tiktok.com/video/tos/useast5/tos-useast5-ve-0068c004-tx/owAsDEGnSEHO8RzEt2ufBFvbZDThYrInL0UOfg/?a=1988&bti=ODszNWYuMDE6&ch=0&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C&cv=1&br=1038&bt=519&cs=2&ds=4&ft=4KJMyMzm8Zmo02IFTb4jV6ebQpWrKsd.&mime_type=video_mp4&qs=15&rc=Njs3MzU0NzM4MzNoNmg2OEBpM2VzOm05cmtldzMzZzczNEBfYmBfMDMyXmAxMS4tLTJiYSNvNW1qMmRzamtgLS1kMS9zcw%3D%3D&btag=e000b8000&expire=1742431200&l=2025031800394580C7F8D52022350025AD&ply_type=2&policy=2&signature=e957f07d8896382ea5d641908e2a61a7&tk=tt_chain_token",
+                        "https://www.tiktok.com/aweme/v1/play/?faid=1988&file_id=e5530e031e4040c5a0546132b0c4e8b3&is_play_url=1&item_id=7453100994063519022&line=0&ply_type=2&signaturev3=dmlkZW9faWQ7ZmlsZV9pZDtpdGVtX2lkLjM0OWVjYTMxZDFjMjkwMzUxOThlNTJmYmI5YzdjZjNm&tk=tt_chain_token&video_id=v12044gd0000ctnbmhvog65jm7pp8br0"
+                    ],
+                    "Width": 1080
+                },
+                "QualityType": 2
+            },
+            {
+                "Bitrate": 381681,
+                "CodecType": "h265_hvc1",
+                "GearName": "adapt_lower_720_1",
+                "MVMAF": "\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 97.083, \\\"v960\\\": 98.005, \\\"v864\\\": 98.523, \\\"v720\\\": 98.984}, \\\"ori\\\": {\\\"v1080\\\": 87.733, \\\"v960\\\": 90.7, \\\"v864\\\": 91.621, \\\"v720\\\": 95.083}}}\"",
+                "PlayAddr": {
+                    "DataSize": 702961,
+                    "FileCs": "c:0-13917-78af",
+                    "FileHash": "0154863da2aeb1165aca6ef117a6ad36",
+                    "Height": 1280,
+                    "Uri": "v12044gd0000ctnbmhvog65jm7pp8br0",
+                    "UrlKey": "v12044gd0000ctnbmhvog65jm7pp8br0_bytevc1_720p_381681",
+                    "UrlList": [
+                        "https://v16-webapp-prime.us.tiktok.com/video/tos/useast5/tos-useast5-ve-0068c001-tx/o0eOYojFIgG3cu1IwvLaPQfCHsceIACOXXVkxA/?a=1988&bti=ODszNWYuMDE6&ch=0&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C&cv=1&br=744&bt=372&cs=2&ds=3&ft=4KJMyMzm8Zmo02IFTb4jV6ebQpWrKsd.&mime_type=video_mp4&qs=14&rc=Z2ZlO2czZGZnNGQzaTpmZEBpM2VzOm05cmtldzMzZzczNEBiNjIvL2BeXy8xNjIzYl5eYSNvNW1qMmRzamtgLS1kMS9zcw%3D%3D&btag=e000b8000&expire=1742431200&l=2025031800394580C7F8D52022350025AD&ply_type=2&policy=2&signature=86540594673e681384e6984b936ae262&tk=tt_chain_token",
+                        "https://v19-webapp-prime.us.tiktok.com/video/tos/useast5/tos-useast5-ve-0068c001-tx/o0eOYojFIgG3cu1IwvLaPQfCHsceIACOXXVkxA/?a=1988&bti=ODszNWYuMDE6&ch=0&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C&cv=1&br=744&bt=372&cs=2&ds=3&ft=4KJMyMzm8Zmo02IFTb4jV6ebQpWrKsd.&mime_type=video_mp4&qs=14&rc=Z2ZlO2czZGZnNGQzaTpmZEBpM2VzOm05cmtldzMzZzczNEBiNjIvL2BeXy8xNjIzYl5eYSNvNW1qMmRzamtgLS1kMS9zcw%3D%3D&btag=e000b8000&expire=1742431200&l=2025031800394580C7F8D52022350025AD&ply_type=2&policy=2&signature=86540594673e681384e6984b936ae262&tk=tt_chain_token",
+                        "https://www.tiktok.com/aweme/v1/play/?faid=1988&file_id=aaace76f509a412dbcaac02d285b9ced&is_play_url=1&item_id=7453100994063519022&line=0&ply_type=2&signaturev3=dmlkZW9faWQ7ZmlsZV9pZDtpdGVtX2lkLjQwZWEwMjdlMWQyOTA1NThkN2E2MjUzNWMyZDJmZTQ2&tk=tt_chain_token&video_id=v12044gd0000ctnbmhvog65jm7pp8br0"
+                    ],
+                    "Width": 720
+                },
+                "QualityType": 14
+            },
+            {
+                "Bitrate": 324350,
+                "CodecType": "h264",
+                "GearName": "lowest_540_0",
+                "MVMAF": "\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 76.624, \\\"v960\\\": 80.441, \\\"v864\\\": 81.644, \\\"v720\\\": 82.065}, \\\"ori\\\": {\\\"v1080\\\": 68.219, \\\"v960\\\": 71.311, \\\"v864\\\": 73.282, \\\"v720\\\": 77.801}}}\"",
+                "PlayAddr": {
+                    "DataSize": 597373,
+                    "FileCs": "c:0-13653-637e",
+                    "FileHash": "5b1851a5d629f8ac730520ab2652ca62",
+                    "Height": 1024,
+                    "Uri": "v12044gd0000ctnbmhvog65jm7pp8br0",
+                    "UrlKey": "v12044gd0000ctnbmhvog65jm7pp8br0_h264_540p_324350",
+                    "UrlList": [
+                        "https://v16-webapp-prime.us.tiktok.com/video/tos/useast5/tos-useast5-pve-0068-tx/oskC3reArXcGSxOiSOvjePeaIXHLddIOAQsIoz/?a=1988&bti=ODszNWYuMDE6&ch=0&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C&cv=1&br=632&bt=316&cs=0&ds=6&ft=4KJMyMzm8Zmo02IFTb4jV6ebQpWrKsd.&mime_type=video_mp4&qs=5&rc=ZzM0Ojw4NDU5NDM2OGhlO0BpM2VzOm05cmtldzMzZzczNEBfM181LjUtNjUxLS5hNGI1YSNvNW1qMmRzamtgLS1kMS9zcw%3D%3D&btag=e000b8000&expire=1742431200&l=2025031800394580C7F8D52022350025AD&ply_type=2&policy=2&signature=62de808f698e2816b4bc56034c8d1868&tk=tt_chain_token",
+                        "https://v19-webapp-prime.us.tiktok.com/video/tos/useast5/tos-useast5-pve-0068-tx/oskC3reArXcGSxOiSOvjePeaIXHLddIOAQsIoz/?a=1988&bti=ODszNWYuMDE6&ch=0&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C&cv=1&br=632&bt=316&cs=0&ds=6&ft=4KJMyMzm8Zmo02IFTb4jV6ebQpWrKsd.&mime_type=video_mp4&qs=5&rc=ZzM0Ojw4NDU5NDM2OGhlO0BpM2VzOm05cmtldzMzZzczNEBfM181LjUtNjUxLS5hNGI1YSNvNW1qMmRzamtgLS1kMS9zcw%3D%3D&btag=e000b8000&expire=1742431200&l=2025031800394580C7F8D52022350025AD&ply_type=2&policy=2&signature=62de808f698e2816b4bc56034c8d1868&tk=tt_chain_token",
+                        "https://www.tiktok.com/aweme/v1/play/?faid=1988&file_id=88eb7ed5130041869201851987b160bd&is_play_url=1&item_id=7453100994063519022&line=0&ply_type=2&signaturev3=dmlkZW9faWQ7ZmlsZV9pZDtpdGVtX2lkLmZkNGEyODkyNGQ5OWY5NTgyMTNhNmYzYzU2NGY4N2E0&tk=tt_chain_token&video_id=v12044gd0000ctnbmhvog65jm7pp8br0"
+                    ],
+                    "Width": 576
+                },
+                "QualityType": 25
+            },
+            {
+                "Bitrate": 318487,
+                "CodecType": "h265_hvc1",
+                "GearName": "adapt_540_1",
+                "MVMAF": "\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 92.381, \\\"v960\\\": 94.17, \\\"v864\\\": 96.176, \\\"v720\\\": 97.641}, \\\"ori\\\": {\\\"v1080\\\": 82.049, \\\"v960\\\": 86.063, \\\"v864\\\": 87.028, \\\"v720\\\": 91.257}}}\"",
+                "PlayAddr": {
+                    "DataSize": 586575,
+                    "FileCs": "c:0-13917-78b5",
+                    "FileHash": "37a01fe2b1494a0d7fd3d61f90290326",
+                    "Height": 1024,
+                    "Uri": "v12044gd0000ctnbmhvog65jm7pp8br0",
+                    "UrlKey": "v12044gd0000ctnbmhvog65jm7pp8br0_bytevc1_540p_318487",
+                    "UrlList": [
+                        "https://v16-webapp-prime.us.tiktok.com/video/tos/useast5/tos-useast5-ve-0068c004-tx/o0HdEYTbgtnRAIOCn8E9fzFGEUDuSrfvBLI2D0/?a=1988&bti=ODszNWYuMDE6&ch=0&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C&cv=1&br=622&bt=311&cs=2&ds=6&ft=4KJMyMzm8Zmo02IFTb4jV6ebQpWrKsd.&mime_type=video_mp4&qs=11&rc=ZmU4ZTU2ODgzPGczaDY0ZEBpM2VzOm05cmtldzMzZzczNEAyNWItXmBhXi8xNDIyLzEwYSNvNW1qMmRzamtgLS1kMS9zcw%3D%3D&btag=e000b8000&expire=1742431200&l=2025031800394580C7F8D52022350025AD&ply_type=2&policy=2&signature=ebaa1491f6cbf3c363e62a3756565291&tk=tt_chain_token",
+                        "https://v19-webapp-prime.us.tiktok.com/video/tos/useast5/tos-useast5-ve-0068c004-tx/o0HdEYTbgtnRAIOCn8E9fzFGEUDuSrfvBLI2D0/?a=1988&bti=ODszNWYuMDE6&ch=0&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C&cv=1&br=622&bt=311&cs=2&ds=6&ft=4KJMyMzm8Zmo02IFTb4jV6ebQpWrKsd.&mime_type=video_mp4&qs=11&rc=ZmU4ZTU2ODgzPGczaDY0ZEBpM2VzOm05cmtldzMzZzczNEAyNWItXmBhXi8xNDIyLzEwYSNvNW1qMmRzamtgLS1kMS9zcw%3D%3D&btag=e000b8000&expire=1742431200&l=2025031800394580C7F8D52022350025AD&ply_type=2&policy=2&signature=ebaa1491f6cbf3c363e62a3756565291&tk=tt_chain_token",
+                        "https://www.tiktok.com/aweme/v1/play/?faid=1988&file_id=3a41235e507d4920a5d5c3a20be58b5c&is_play_url=1&item_id=7453100994063519022&line=0&ply_type=2&signaturev3=dmlkZW9faWQ7ZmlsZV9pZDtpdGVtX2lkLjg0OWRhZjZjY2VhNmM0NmE1MWE3NDVhODY5N2ZmOGZi&tk=tt_chain_token&video_id=v12044gd0000ctnbmhvog65jm7pp8br0"
+                    ],
+                    "Width": 576
+                },
+                "QualityType": 28
+            }
+        ],
+        "claInfo": {
+            "enableAutoCaption": false,
+            "hasOriginalAudio": false,
+            "noCaptionReason": 2
+        },
+        "codecType": "h264",
+        "cover": "https://p19-pu-sign-useast8.tiktokcdn-us.com/obj/tos-useast5-p-0068-tx/ocAAzPEIEDgnTubffuFSuOBUW9vOMEAYDCrRAn?lk3s=81f88b70&x-expires=1742428800&x-signature=B9%2Fq%2FPmPy0Zcj0yFcLo3IEwRFdA%3D&shp=81f88b70&shcp=-",
+        "definition": "540p",
+        "duration": 14,
+        "dynamicCover": "https://p19-pu-sign-useast8.tiktokcdn-us.com/obj/tos-useast5-p-0068-tx/ocAAzPEIEDgnTubffuFSuOBUW9vOMEAYDCrRAn?lk3s=81f88b70&x-expires=1742428800&x-signature=B9%2Fq%2FPmPy0Zcj0yFcLo3IEwRFdA%3D&shp=81f88b70&shcp=-",
+        "encodeUserTag": "",
+        "encodedType": "normal",
+        "format": "mp4",
+        "height": 1024,
+        "id": "7453100994063519022",
+        "originCover": "https://p19-pu-sign-useast8.tiktokcdn-us.com/obj/tos-useast5-p-0068-tx/o8bHaeGSLfvP3ddb9jOYACQIxO5ggkCeAOX8oI?lk3s=81f88b70&x-expires=1742428800&x-signature=8qvPwYa8IymOJbrfZVUGkq3kUCI%3D&shp=81f88b70&shcp=-",
+        "playAddr": "https://v16-webapp-prime.us.tiktok.com/video/tos/useast5/tos-useast5-ve-0068c003-tx/osXdjXsnOQkCIpHOdC3LLDaIIcGgxrAoPAee9e/?a=1988&bti=ODszNWYuMDE6&ch=0&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C&cv=1&br=1468&bt=734&cs=0&ds=6&ft=4KJMyMzm8Zmo02IFTb4jV6ebQpWrKsd.&mime_type=video_mp4&qs=0&rc=N2VoO2U0PDlmNTRlM2VpZkBpM2VzOm05cmtldzMzZzczNEBeXjM1NV9jNWExMDMvMi0tYSNvNW1qMmRzamtgLS1kMS9zcw%3D%3D&btag=e000b8000&expire=1742431200&l=2025031800394580C7F8D52022350025AD&ply_type=2&policy=2&signature=2277ffbe488b8d38c88ef9ab6f853d01&tk=tt_chain_token",
+        "ratio": "540p",
+        "videoID": "v12044gd0000ctnbmhvog65jm7pp8br0",
+        "videoQuality": "normal",
+        "volumeInfo": {
+            "Loudness": -21.3,
+            "Peak": 0.45186
+        },
+        "width": 576,
+        "zoomCover": {
+            "240": "https://p16-pu-sign-useast8.tiktokcdn-us.com/tos-useast5-p-0068-tx/ocAAzPEIEDgnTubffuFSuOBUW9vOMEAYDCrRAn~tplv-photomode-zoomcover:240:240.jpeg?lk3s=81f88b70&x-expires=1742428800&x-signature=wigLDYzbaAlw1eDF%2Ffvk%2FHluaeQ%3D&shp=81f88b70&shcp=-",
+            "480": "https://p16-pu-sign-useast8.tiktokcdn-us.com/tos-useast5-p-0068-tx/ocAAzPEIEDgnTubffuFSuOBUW9vOMEAYDCrRAn~tplv-photomode-zoomcover:480:480.jpeg?lk3s=81f88b70&x-expires=1742428800&x-signature=zmAMgs%2FVBdL9YYyd%2BYiwTjvcVOE%3D&shp=81f88b70&shcp=-",
+            "720": "https://p19-pu-sign-useast8.tiktokcdn-us.com/tos-useast5-p-0068-tx/ocAAzPEIEDgnTubffuFSuOBUW9vOMEAYDCrRAn~tplv-photomode-zoomcover:720:720.jpeg?lk3s=81f88b70&x-expires=1742428800&x-signature=5%2FwiGGiMOSdMKp4aQqc%2BEWKY%2BeE%3D&shp=81f88b70&shcp=-",
+            "960": "https://p19-pu-sign-useast8.tiktokcdn-us.com/tos-useast5-p-0068-tx/ocAAzPEIEDgnTubffuFSuOBUW9vOMEAYDCrRAn~tplv-photomode-zoomcover:960:960.jpeg?lk3s=81f88b70&x-expires=1742428800&x-signature=JvXiLRdUdHpWpu5%2BzczFmo4ggaA%3D&shp=81f88b70&shcp=-"
+        }
+    }
+}

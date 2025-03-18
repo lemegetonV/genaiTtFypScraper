@@ -1,0 +1,6 @@
+requests
+logging
+dotenv
+tikapi
+openai
+google-genai

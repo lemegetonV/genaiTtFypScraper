@@ -1,0 +1,5 @@
+.venv/*
+.env
+scraper.log
+video_lookup.db
+response_dump.json
