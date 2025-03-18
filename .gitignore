@@ -2,5 +2,4 @@
 .env
 scraper.log
 video_lookup.db
-video_analysis.py
 response_dump.json
