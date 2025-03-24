@@ -313,8 +313,19 @@ class TikTokScraper:
 
 def main():
     try:
+        while True:
+            try:
+                runs = int(input("Enter number of runs (1-5): "))
+                if 1 <= runs <= 5:
+                    break
+                else:
+                    print("Please enter a number between 1 and 5")
+            except ValueError:
+                print("Please enter a valid number")
+        
         scraper = TikTokScraper()
-        for i in range(1,6):
+        for i in range(runs):
+            print(f"\nStarting run {i+1} of {runs}")
             scraper.scrape_and_save()
         
     except Exception as e:
