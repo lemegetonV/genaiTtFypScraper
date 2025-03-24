@@ -29,15 +29,13 @@ class TikTokScraper:
         
         # Load API keys and account token
         self.api_key = os.getenv('TIKAPI_KEY')
-        self.access_token = os.getenv('ACCOUNT_KEY')
         self.rapid_api_key = os.getenv('RAPIDAPI_KEY')
         self.gemini_api_key = os.getenv('GEMINI_API_KEY_1')
         
-        if not all([self.api_key, self.access_token, self.rapid_api_key]):    
+        if not all([self.api_key, self.rapid_api_key, self.gemini_api_key]):    
             raise ValueError("Missing keys in .env file")
         
         self.api = TikAPI(self.api_key)
-        self.User = self.api.user(accountKey=self.access_token)
         self.output_dir = os.path.join(os.path.dirname(__file__), 'OUTPUT')
         self.output_dir_filtered = os.path.join(os.path.dirname(__file__), 'OUTPUT_FILTERED')
         os.makedirs(self.output_dir, exist_ok=True)
@@ -249,7 +247,7 @@ class TikTokScraper:
         """
         try:
             
-            response = self.User.posts.explore(
+            response = self.api.public.explore(
                 count=30,
                 language='en',
                 region='US',
