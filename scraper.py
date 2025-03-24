@@ -31,7 +31,7 @@ class TikTokScraper:
         self.api_key = os.getenv('TIKAPI_KEY')
         self.access_token = os.getenv('ACCOUNT_KEY')
         self.rapid_api_key = os.getenv('RAPIDAPI_KEY')
-        self.gemini_api_key = os.getenv('GEMINI_API_KEY')
+        self.gemini_api_key = os.getenv('GEMINI_API_KEY_1')
         
         if not all([self.api_key, self.access_token, self.rapid_api_key]):    
             raise ValueError("Missing keys in .env file")
@@ -107,20 +107,17 @@ class TikTokScraper:
             client = genai.Client(api_key=self.gemini_api_key)
 
             # Hardcoded prompt to be sent with the video
-            prompt = '''
-            Analyze the video content and determine if it meets the following criteria:
-            1. The video features and focuses only one person, who is female.
-            2. The video appears to be taken by the person in the video, using a front-facing camera.
-            3. Strong Facial Expressions: The female subject displays very strong and exaggerated facial expressions.
-            4. The video contains only the person without any text or captions embedded on the video.
-            5. There subject should not be overlaid with any other content, such as text or graphics.
-            Summarize the video in a short description and if the video meets ALL of the above criteria set the 'filter_passed' field to 'yes'. If the video fails to meet any of these criteria, set the 'filter_passed' field to 'no'.
-            Output the data strictly in the following JSON format:
-            {
-                "summary": "Short summary of the video and the person's facial expressions.",
-                "filter_passed": "yes" or "no"
-            }
-            '''
+            # Read prompt from input_prompt.txt file
+            prompt_path = os.path.join(os.path.dirname(__file__), 'input_prompt.txt')
+            try:
+                with open(prompt_path, 'r', encoding='utf-8') as f:
+                    prompt = f.read().strip()
+            except FileNotFoundError:
+                logging.error("input_prompt.txt file not found")
+                raise
+            except Exception as e:
+                logging.error(f"Error reading prompt file: {str(e)}")
+                raise
             
             # Check the size of the selected video file
             file_size = os.path.getsize(video_path)
