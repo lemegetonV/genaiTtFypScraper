@@ -5,3 +5,5 @@ OUTPUT_FILTERED/*
 scraper.log
 video_lookup.db
 response_dump.json
+prompts.txt
+.old/*

@@ -24,7 +24,9 @@ logging.basicConfig(
 load_dotenv()
 
 class TikTokScraper:
+    
     def __init__(self):
+        
         # Load API keys and account token
         self.api_key = os.getenv('TIKAPI_KEY')
         self.access_token = os.getenv('ACCOUNT_KEY')
@@ -68,7 +70,6 @@ class TikTokScraper:
         """Process each video item from the response"""
         
         try:
-            
             # Create directory for video
             video_id = item.get('id')
             video_dir = os.path.join(self.output_dir, f"video_{video_id}")
@@ -87,51 +88,47 @@ class TikTokScraper:
                 "x-rapidapi-key": f"{self.rapid_api_key}",
                 "x-rapidapi-host": "tiktok-video-downloader-api.p.rapidapi.com"
             }
-            try:
-                response2 = requests.get(url, headers=headers, params=querystring)
-                response2.raise_for_status()  # Raise an HTTPError for bad responses (4XX and 5XX)
-                downloadUrl = response2.json()['downloadUrl']
-                print(downloadUrl)
-                video_path = os.path.join(video_dir, 'video.mp4')
-                with requests.get(downloadUrl, stream=True) as r:
-                    r.raise_for_status()
-                    with open(video_path, 'wb') as f:
-                        for chunk in r.iter_content(chunk_size=8192):
-                            f.write(chunk)
-                # Update the database to mark the video as downloaded
-                self.cursor.execute("UPDATE processed_videos SET is_downloaded = 'yes' WHERE video_id = ?", (video_id,))
-                self.conn.commit()
-            except requests.exceptions.HTTPError as http_err:
-                if 500 <= response2.status_code < 600:  # Check for 5XX errors
-                    logging.error(f"Download failed for video {video_id} due to server error: {http_err}")
-                    # Update the database to mark the video as not downloaded
-                    self.cursor.execute("UPDATE processed_videos SET is_downloaded = 'no' WHERE video_id = ?", (video_id,))
-                    self.conn.commit()
-                else:
-                    raise
-            except Exception as e:
-                logging.error(f"Unexpected error during download for video {video_id}: {str(e)}")
-                # Update the database to mark the video as not downloaded
-                self.cursor.execute("UPDATE processed_videos SET is_downloaded = 'failed' WHERE video_id = ?", (video_id,))
-                self.conn.commit()
+            response2 = requests.get(url, headers=headers, params=querystring)
+            response2.raise_for_status()  # Raise an HTTPError for bad responses (4XX and 5XX)
+            downloadUrl = response2.json()['downloadUrl']
+            print(downloadUrl)
+            video_path = os.path.join(video_dir, 'video.mp4')
+            with requests.get(downloadUrl, stream=True) as r:
+                r.raise_for_status()
+                with open(video_path, 'wb') as f:
+                    for chunk in r.iter_content(chunk_size=8192):
+                        f.write(chunk)
+            
+            # Update the database to mark the video as downloaded
+            self.cursor.execute("UPDATE processed_videos SET is_downloaded = 'yes' WHERE video_id = ?", (video_id,))
+            self.conn.commit()
 
-            # Gemini Video Analysis Logic
+            # Gemini Client Initialization
             client = genai.Client(api_key=self.gemini_api_key)
-            # Hardcoded prompt to be sent with the video
-            prompt = '''Analyze and summarize this video. Also check each of the following -
-            Is there a girl who is the main subject of the video, dancing or moving along to a song/music or is the girl doing any kind of movement with a song/music playing in the background?
-            Is there a girl who is the main subject of the video, doing a lip-sync to a music/audio?
-            Is there a girl who is the main subject of the video, in shock or showing a similar strong emotion?
-            Based on the answers to above questions, output the data in the following json format -
-            {summary: "video summary", girl_dancing_or_moving: yes/no, girl_lip_syncing: yes/no, girl_in_shock_or_emotion: yes/no}
-            Output only the json and no extra text, response should only contain the json which can be parsed directly.'''
 
+            # Hardcoded prompt to be sent with the video
+            prompt = '''
+            Analyze the video content and determine if it meets the following criteria:
+            1. The video features and focuses only one person, who is female.
+            2. The video appears to be taken by the person in the video, using a front-facing camera.
+            3. Strong Facial Expressions: The female subject displays very strong and exaggerated facial expressions.
+            4. The video contains only the person without any text or captions embedded on the video.
+            5. There subject should not be overlaid with any other content, such as text or graphics.
+            Summarize the video in a short description and if the video meets ALL of the above criteria set the 'filter_passed' field to 'yes'. If the video fails to meet any of these criteria, set the 'filter_passed' field to 'no'.
+            Output the data strictly in the following JSON format:
+            {
+                "summary": "Short summary of the video and the person's facial expressions.",
+                "filter_passed": "yes" or "no"
+            }
+            '''
+            
             # Check the size of the selected video file
             file_size = os.path.getsize(video_path)
             print("File size (bytes):", file_size)
             threshold = 20 * 1024 * 1024  # 20 MB
 
             if file_size < threshold:
+                
                 # Use inline upload for small videos (<20 MB)
                 print("Using inline upload...")
                 with open(video_path, 'rb') as f:
@@ -150,6 +147,7 @@ class TikTokScraper:
                         ]
                     )
                 )
+                
                 # Extract the response from Gemini
                 print("Response from Gemini (inline):")
                 json_str = response3.text
@@ -157,14 +155,16 @@ class TikTokScraper:
                 if isinstance(data, list): # if Gemini response is a list instead of a dict
                     data = data[0]
                 print(data)
+                
                 # Save the Gemini response to a file
                 time.sleep(1)
                 analysis_file = os.path.join(video_dir, 'analysis.json')
                 time.sleep(1)
                 with open(analysis_file, 'w', encoding='utf-8') as f:
                     json.dump(data, f, indent=4, ensure_ascii=False)
+                
                 # Check the response for specific keys
-                if any(data.get(key) == "yes" for key in ["girl_dancing_or_moving", "girl_lip_syncing", "girl_in_shock_or_emotion"]):
+                if any(data.get(key) == "yes" for key in ["filter_passed"]):
                     # Move the video directory to the OUTPUT_FILTERED directory
                     filtered_video_dir = os.path.join(self.output_dir_filtered, f"video_{video_id}")
                     try:
@@ -181,7 +181,9 @@ class TikTokScraper:
                     # Update the database to mark the video as not filtered
                     self.cursor.execute("UPDATE processed_videos SET is_filtered = 'no' WHERE video_id = ?", (video_id,))
                     self.conn.commit()
+            
             else:
+                
                 # Use File API upload for larger videos (>=20 MB)
                 print("Uploading video file via File API...")
                 video_file = client.files.upload(file=video_path)
@@ -204,20 +206,24 @@ class TikTokScraper:
                     },
                     contents=[video_file, prompt]
                 )
-                print("Response from Gemini (inline):")
+                
+                # Extract the response from Gemini
+                print("Response from Gemini (FileAPI):")
                 json_str = response3.text
                 data = json.loads(json_str)
                 if isinstance(data, list): # if Gemini response is a list instead of a dict
                     data = data[0]
                 print(data)
+                
                 # Save the Gemini response to a file
                 time.sleep(1)
                 analysis_file = os.path.join(video_dir, 'analysis.json')
                 time.sleep(1)
                 with open(analysis_file, 'w', encoding='utf-8') as f:
                     json.dump(data, f, indent=4, ensure_ascii=False)
+                
                 # Check the response for specific keys
-                if any(data.get(key) == "yes" for key in ["girl_dancing_or_moving", "girl_lip_syncing", "girl_in_shock_or_emotion"]):
+                if any(data.get(key) == "yes" for key in ["filter_passed"]):
                     # Move the video directory to the OUTPUT_FILTERED directory
                     filtered_video_dir = os.path.join(self.output_dir_filtered, f"video_{video_id}")
                     try:
@@ -260,6 +266,7 @@ class TikTokScraper:
                         logging.warning("No video ID found in item, most probably it's a livestream")
                         continue
                     print(f"video - {video_id}")
+                    
                     # Check if the video_id exists in the database and its 'is_downloaded' status
                     self.cursor.execute("SELECT is_downloaded FROM processed_videos WHERE video_id = ?", (video_id,))
                     result = self.cursor.fetchone()
@@ -273,8 +280,9 @@ class TikTokScraper:
                             self.cursor.execute("INSERT INTO processed_videos (video_id) VALUES (?)", (video_id,))
                         self.conn.commit()
                         print(f"Processing video - {video_id}")
+                    
                     video_duration = item.get('video', {}).get('duration', 0)
-                    if video_duration < 20: # Only process videos less than 20 seconds (Change if necessary)
+                    if video_duration <= 20: # Only process videos less than 20 seconds (Change if necessary)
                         self.process_video(item, response)
                     else:
                         print(f"{video_id} Video skipped because duration exceeded threshold")
@@ -309,7 +317,8 @@ class TikTokScraper:
 def main():
     try:
         scraper = TikTokScraper()
-        scraper.scrape_and_save()
+        for i in range(1,6):
+            scraper.scrape_and_save()
         
     except Exception as e:
         logging.error(f"An error occurred: {str(e)}")
