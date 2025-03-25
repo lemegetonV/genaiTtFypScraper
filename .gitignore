@@ -1,8 +1,9 @@
-.venv/*
-.env
-OUTPUT/*
-OUTPUT_FILTERED/*
-.old/*
 video_lookup.db
 scraper.log
-input_prompt.txt
+.venv/*
+.env
+dist/*
+.old/*
+scripts/input_prompt.txt
+scripts/OUTPUT/*
+scripts/OUTPUT_FILTERED/*
