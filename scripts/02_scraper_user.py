@@ -28,7 +28,7 @@ class TikTokScraper:
     def __init__(self):
         
         # Load API keys and account token
-        self.api_key = os.getenv('TIKAPI_KEY')
+        self.api_key = os.getenv('API_KEY')
         self.access_token = os.getenv('ACCOUNT_KEY')
         self.rapid_api_key = os.getenv('RAPIDAPI_KEY')
         self.gemini_api_key = os.getenv('GEMINI_API_KEY_1')
@@ -42,6 +42,10 @@ class TikTokScraper:
         self.output_dir_filtered = os.path.join(os.path.dirname(__file__), 'OUTPUT_FILTERED')
         os.makedirs(self.output_dir, exist_ok=True)
         os.makedirs(self.output_dir_filtered, exist_ok=True)
+
+        # List of Gemini models to alternate between
+        self.gemini_models = ['gemini-2.0-flash-lite', 'gemini-2.0-flash']
+        self.current_gemini_index = 0 # Index for the next model to use
 
         # Set up a connection to a SQLite database stored in your project directory.
         # This file will be created if it does not exist.
@@ -130,8 +134,14 @@ class TikTokScraper:
                 print("Using inline upload...")
                 with open(video_path, 'rb') as f:
                     video_bytes = f.read()
+                
+                # Select the next model and update the index
+                selected_model_name = self.gemini_models[self.current_gemini_index]
+                self.current_gemini_index = (self.current_gemini_index + 1) % len(self.gemini_models)
+                print(f"Using Gemini model: {selected_model_name}")
+
                 response3 = client.models.generate_content(
-                    model="gemini-2.0-flash-lite",
+                    model=selected_model_name,
                     config={
                         'response_mime_type': 'application/json',
                     },  
@@ -196,8 +206,13 @@ class TikTokScraper:
                 if video_file.state.name == "FAILED":
                     raise ValueError("Video file processing failed.")
 
+                # Select the next model and update the index
+                selected_model_name = self.gemini_models[self.current_gemini_index]
+                self.current_gemini_index = (self.current_gemini_index + 1) % len(self.gemini_models)
+                print(f"Using Gemini model: {selected_model_name}")
+
                 response = client.models.generate_content(
-                    model="gemini-2.0-flash-lite",
+                    model=selected_model_name,
                     config={
                         'response_mime_type': 'application/json',
                     },

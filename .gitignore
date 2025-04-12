@@ -4,6 +4,6 @@ scraper.log
 .env
 dist/*
 .old/*
-scripts/input_prompt.txt
 scripts/OUTPUT/*
 scripts/OUTPUT_FILTERED/*
+gemini_alternation_plan.md
