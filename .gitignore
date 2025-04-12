@@ -3,7 +3,9 @@ scraper.log
 .venv/*
 .env
 dist/*
+build/*
 .old/*
 scripts/OUTPUT/*
 scripts/OUTPUT_FILTERED/*
+*.spec
 gemini_alternation_plan.md

@@ -9,19 +9,27 @@ from dotenv import load_dotenv
 from tikapi import TikAPI, ValidationException, ResponseException
 from google import genai
 from google.genai import types
+import sys
 
-# Set up logging
+# Determine base directory (executable's dir if frozen, script's dir otherwise)
+if getattr(sys, 'frozen', False):
+    base_dir = os.path.dirname(sys.executable)
+else:
+    base_dir = os.path.dirname(__file__)
+
+# Set up logging (using the globally defined base_dir)
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('scraper.log'),
+        logging.FileHandler(os.path.join(base_dir, 'scraper.log')),
         logging.StreamHandler()
     ]
 )
 
 # Load environment variables
-load_dotenv()
+# Load environment variables (using the globally defined base_dir)
+load_dotenv(dotenv_path=os.path.join(base_dir, '.env'))
 
 class TikTokScraper:
     
@@ -37,14 +45,7 @@ class TikTokScraper:
         
         self.api = TikAPI(self.api_key)
         
-        # Keep using project directory in development, use exe directory when packaged
-        import sys
-        if getattr(sys, 'frozen', False):
-            # Running as exe - use exe's directory
-            base_dir = os.path.dirname(sys.executable)
-        else:
-            # Running in development - use project directory as before
-            base_dir = os.path.dirname(__file__)
+        # Use the globally defined base_dir for instance paths
         
         self.output_dir = os.path.join(base_dir, 'OUTPUT')
         self.output_dir_filtered = os.path.join(base_dir, 'OUTPUT_FILTERED')
@@ -57,7 +58,8 @@ class TikTokScraper:
 
         # Set up a connection to a SQLite database stored in your project directory.
         # This file will be created if it does not exist.
-        self.conn = sqlite3.connect('video_lookup.db')
+        # Connect to SQLite database in the base directory
+        self.conn = sqlite3.connect(os.path.join(base_dir, 'video_lookup.db'))
         self.cursor = self.conn.cursor()
 
         # Create a table to store processed video IDs if it doesn't already exist.
@@ -120,7 +122,8 @@ class TikTokScraper:
 
             # Hardcoded prompt to be sent with the video
             # Read prompt from input_prompt.txt file
-            prompt_path = os.path.join(os.path.dirname(__file__), 'input_prompt.txt')
+            # Look for input_prompt.txt in the base directory
+            prompt_path = os.path.join(base_dir, 'input_prompt.txt')
             try:
                 with open(prompt_path, 'r', encoding='utf-8') as f:
                     prompt = f.read().strip()

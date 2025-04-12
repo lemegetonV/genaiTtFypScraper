@@ -1,0 +1,3 @@
+pyinstaller --onefile --distpath dist --name scraper_general scripts/01_scraper_general.py
+
+pyinstaller --onefile --distpath dist --name scraper_user scripts/02_scraper_user.py
