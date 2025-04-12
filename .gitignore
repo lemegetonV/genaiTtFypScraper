@@ -1,11 +1,10 @@
-video_lookup.db
-scraper.log
 .venv/*
 .env
-dist/*
+video_lookup.db
+scraper.log
+*.spec
 build/*
-.old/*
 scripts/OUTPUT/*
 scripts/OUTPUT_FILTERED/*
-*.spec
-gemini_alternation_plan.md
+dist/OUTPUT/*
+dist/OUTPUT_FILTERED/*

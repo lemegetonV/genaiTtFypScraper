@@ -1,0 +1,16 @@
+Analyze the video content and determine if it meets the following criteria:
+
+1. The video features and focuses only one person, who is a female.
+2. The video appears to be taken by the person in the video, using a front-facing camera.
+3. Strong Facial Expressions: The female subject displays very strong and exaggerated facial expressions.
+4. The video contains only the person without any text or captions embedded on the video.
+5. There subject should not be overlaid with any other content, such as text or graphics.
+
+Summarize the video in a short description and if the video meets ALL of the above criteria set the 'filter_passed' field to 'yes'.
+If the video fails to meet any of these criteria, set the 'filter_passed' field to 'no'.
+
+Output the data strictly in the following JSON format:
+{
+    "summary": "Short summary of the video content.",
+    "filter_passed": "yes" or "no"
+}
