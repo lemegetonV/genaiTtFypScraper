@@ -36,8 +36,18 @@ class TikTokScraper:
             raise ValueError("Missing keys in .env file")
         
         self.api = TikAPI(self.api_key)
-        self.output_dir = os.path.join(os.path.dirname(__file__), 'OUTPUT')
-        self.output_dir_filtered = os.path.join(os.path.dirname(__file__), 'OUTPUT_FILTERED')
+        
+        # Keep using project directory in development, use exe directory when packaged
+        import sys
+        if getattr(sys, 'frozen', False):
+            # Running as exe - use exe's directory
+            base_dir = os.path.dirname(sys.executable)
+        else:
+            # Running in development - use project directory as before
+            base_dir = os.path.dirname(__file__)
+        
+        self.output_dir = os.path.join(base_dir, 'OUTPUT')
+        self.output_dir_filtered = os.path.join(base_dir, 'OUTPUT_FILTERED')
         os.makedirs(self.output_dir, exist_ok=True)
         os.makedirs(self.output_dir_filtered, exist_ok=True)
 
