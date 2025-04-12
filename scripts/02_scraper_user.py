@@ -33,7 +33,7 @@ load_dotenv(dotenv_path=os.path.join(base_dir, '.env'))
 
 class TikTokScraper:
     
-    def __init__(self):
+    def __init__(self, max_duration=60): # Add max_duration parameter with default
         
         # Load API keys and account token
         self.api_key = os.getenv('API_KEY')
@@ -73,6 +73,8 @@ class TikTokScraper:
             )
         ''')
         self.conn.commit()
+
+        self.max_duration = max_duration # Store max_duration
 
 
     
@@ -307,7 +309,7 @@ class TikTokScraper:
                         print(f"Processing video - {video_id}")
                     
                     video_duration = item.get('video', {}).get('duration', 0)
-                    if video_duration <= 20: # Only process videos less than 20 seconds (Change if necessary)
+                    if video_duration <= self.max_duration: # Use dynamic max_duration
                         self.process_video(item, response)
                     else:
                         print(f"{video_id} Video skipped because duration exceeded threshold")
@@ -351,7 +353,23 @@ def main():
             except ValueError:
                 print("Please enter a valid number")
         
-        scraper = TikTokScraper()
+        # Get max video duration from user
+        while True:
+            try:
+                duration_input = input(f"Enter max video duration (20-60 seconds, default {60}): ").strip()
+                if not duration_input:
+                    max_duration = 60
+                    break
+                max_duration = int(duration_input)
+                if 20 <= max_duration <= 60:
+                    break
+                else:
+                    print("Please enter a number between 20 and 60, or leave blank for default.")
+            except ValueError:
+                print("Invalid input. Please enter a number.")
+
+        print(f"Using max video duration: {max_duration} seconds")
+        scraper = TikTokScraper(max_duration=max_duration) # Pass duration to constructor
         for i in range(runs):
             print(f"\nStarting run {i+1} of {runs}")
             scraper.scrape_and_save()
